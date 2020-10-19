@@ -1,0 +1,17 @@
+.test_absolute {
+    position: relative;
+    height: calc(100vh - 76px); 
+    .cube {
+        background-color: $red;
+        border-radius: 100px;
+        border: 3px solid $red;
+        transition: $transition;
+        height: 50px;
+        width: 50px;
+        box-sizing: border-box;
+        @extend %absoluteCenter;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}

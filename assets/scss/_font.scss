@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+@include font-face("Elephant","../../fonts/elephant.");
+@include font-face("Open Sans","../../fonts/OpenSans-Regular");
+@include font-face("Montserrat","../../fonts/Montserrat-Regular");
