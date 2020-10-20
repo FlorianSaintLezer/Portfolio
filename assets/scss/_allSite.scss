@@ -9,9 +9,13 @@ a {
 a:hover {
     color: $cThemeLight;
 }
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
     margin: 0;
     font-family: "Roboto Black";
+}
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 h2 {
     font-size: 2rem;
@@ -67,5 +71,5 @@ h2 {
     }
     .sectionHead h2 {
         margin: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }

@@ -31,7 +31,6 @@
         font-weight: 800;
         background: linear-gradient(to right, $cBtn1, $cBtn2);
         color: $cLight;
-        border: $border;
         border-radius: $brad;
     }
 // INPUT
@@ -76,7 +75,7 @@
     %overlay {
         width: 100%;
         height: 100%;
-        background-color: $cDark;
+        background-color: black;
         opacity: .5;
         position: absolute;
         z-index: 0;   
