@@ -1,0 +1,71 @@
+body {
+    font-family: "Roboto Regular", sans-serif;
+    background-color: whitesmoke;
+}
+a {
+   text-decoration: none; 
+   color: inherit;
+}
+a:hover {
+    color: $cThemeLight;
+}
+h2, h3, h4, h5 {
+    margin: 0;
+    font-family: "Roboto Black";
+}
+h2 {
+    font-size: 2rem;
+}
+
+/* //////////////// */
+/* // CLASS SPEC // */
+.content {
+    @extend %container;
+}
+.bgImg {
+    @extend %bgImage;
+}
+.overlay {
+    @extend %overlay;
+}
+.imgFluid {
+    @extend %imgFluid;
+}
+.relative {
+    position: relative;
+}
+
+/* /////////////// */
+/* // SECTIONS //  */
+    .intersection {
+        width: 100%;
+        height: 2rem;
+        filter: brightness(.2);    
+    }
+    .mainSection {
+        padding: 6rem 0;
+    }
+    .sectionContent {
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sectionDeco {
+        width: 5px;
+        height: 100%;
+        background-color: $cThemeDark;
+        position: absolute;
+        left: 0;
+    }
+    .sectionHead {
+        margin: 0 auto;
+        line-height: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Roboto Black", sans-serif;
+    }
+    .sectionHead h2 {
+        margin: 0;
+        margin-bottom: 1rem;
+    }

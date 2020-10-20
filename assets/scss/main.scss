@@ -1,7 +1,11 @@
 @import "reset";
-@import "var"; //Crée des variables
+@import "var"; 
 @import "font";
-@import "mixins"; // Fonction pour injecter des variables
-@import "placeholder"; //Bout de CSS dans lequel on met ce qu'on veut et qu'on appelle quand on en a besoin
-@import "allSites";
-@import "nav";
+@import "mixins"; 
+@import "placeholder";
+@import "allSite";
+@import "header";
+@import "about";
+@import "skills";
+@import "tooltip";
+@import "projects";
