@@ -1,0 +1,7 @@
+footer {
+    background-color: $cDark;
+    color: $cLight;
+    & p {
+        padding: 3rem 1rem;
+    }
+}

@@ -2,7 +2,8 @@
 /* // SECTION FORMATIONS // */
 /* //////////////////////// */
 .formation {
-    width: 80%;
+    // width: 80%;
+    width: 100%;
     @include flex(row,space-between,center,nowrap);
     position: relative;
     margin: 2rem auto 0;
@@ -25,12 +26,13 @@
     }
     & .formationDesc {
         position: relative;
-        width: calc(90% - 110px);
-        padding: 2rem;
+        // width: calc(90% - 110px);
+        width: 100%;
+        padding: 2rem 3rem;
         border-radius: 5px;
         text-align: center;
-        & .formlist {
-            @include flex (row, space-between, center, wrap) ;
+        & .skillList {
+            @include flex (row, center, center, wrap) ;
             & .skill {
                 width: 100px;
                 height: 100px;

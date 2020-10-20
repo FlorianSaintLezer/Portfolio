@@ -7,17 +7,15 @@
     <title>Portfolio by FlorianSL</title>
 
     <link rel="stylesheet" href="assets/css/main.min.css">
-    <link rel="stylesheet" href="assets/css/media_queries.css">
+    <!-- <link rel="stylesheet" href="assets/css/media_queries.css"> -->
 
     <!-- FONTAWESOME - Nice icons -->
     <link rel="stylesheet" href="assets/lib/fontawesome-free-5.15.1-web/css/all.css">
-    <script src="assets/lib/fontawesome-free-5.15.1-web/js/all.js"></script>
 
     <!-- SLICK for carousels -->
     <link rel="stylesheet" href="assets/lib/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="assets/lib/slick-1.8.1/slick/slick-theme.css">
 
-    <script src="assets/lib/slick-1.8.1/slick/slick.js"></script>
     
 </head>
 <body>
@@ -30,14 +28,13 @@
         <div class="content">
             <nav class="navbar">
                 <div class="logo">
-                    <a href="#home">FSL <em>portfolio</em></a>
+                    <a href="#home">FSL <em><span>p</span>ortfolio</em></a>
                 </div>
                 <div class="toggler">
                     <p>Menu</p>
                     <button><i class="fas fa-bars"></i></button>
                 </div>
                 <ul class="navList">
-                    <li class="navItem"><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
                     <li class="navItem"><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
                     <li class="navItem"><a href="#formation"><i class="fas fa-graduation-cap"></i> Formation</a></li>
                     <li class="navItem"><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
@@ -46,7 +43,8 @@
             </nav>
             <div id="homeTitle">
                 <h1>Bonjour, je m'appelle Florian et je suis</h1>
-                <h2>Développeur web / web mobile <br> en formation</h2>       
+                <h2>Développeur web / web mobile <br> en formation</h2>
+                <a href="#projects">Voir mes réalisations</a>    
             </div>
         </div>
     </header>
@@ -101,18 +99,16 @@
                 <!-- CONTENT -->
                 <div class=sectionContent>
                     <div class="formation fLeft">
-                        <div class="circle">
+                        <!-- <div class="circle">
                             <p>
                                 Sept.2020
                                 Avr.2021
                             </p>
                         </div>
-                        <div class="decoFormInt"></div>
+                        <div class="decoFormInt"></div> -->
                         <div class="formationDesc">
-                            <h3>Développeur Web - Web mobile</h3>
-                            <h4>Titre professionnel</h4>
-                            <h5>Talis Business School</h5>
-                            <div class="formlist">
+                            <h3>PROGRAMMATION WEB</h3>
+                            <div class="skillList">
                                 <div class="skill"><img src="assets/img/html5.svg" alt=""></div>
                                 <div class="skill"><img src="assets/img/css-5.svg" alt=""></div>
                                 <div class="skill"><img src="assets/img/javascript-4.svg" alt=""></div>
@@ -128,16 +124,12 @@
                     </div>
 
                     <div class="formation fRight">
-                        <div class="circle">
-                            <p>
-                                Juin 2001
-                            </p>
-                        </div>
-                        <div class="decoFormInt"></div>
+                        
                         <div class="formationDesc">
-                            <h3>Bac Informatique de Gestion</h3>
-                            <h4>Option communication</h4>
-                            <h5>Lycée Gustave Eiffel</h5>
+                            <h3>AUTRES COMPETENCES UTILES</h3>
+                            <div class="skillList">
+                                <div class="skill"><img src="assets/img/Coffee_cup_flat.svg" alt="">Faire du café</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -236,6 +228,11 @@
                 <!-- HEAD -->
                 <div class="sectionHead">
                     <h2>Contact</h2>
+                    <p>
+                        Une question, un projet ?
+                        <br>
+                        Remplissez ce formulaire afin que je puisse vous recontacter dans les plus brefs délais.
+                    </p>
                 </div>
                 <!-- CONTENT -->
                 <div class="sectionContent">
@@ -260,21 +257,17 @@
                             <label for="formMessage">Message :</label>
                             <textarea type="text" id="formMessage" recquired placeholder="Votre message..."></textarea>
                         </div>
-                        <input type="submit" Value="Envoyez">
+                        <input type="submit" Value="Envoyer">
                     </form>
 
                 </div>
             </div>
-
-        </section>
-        
-
-        
-        
-        
+        </section>         
     </main>
     <footer>
-
+        <div class="content">
+            <p>Copyright FlorianSL</p>
+        </div>
     </footer>
     
 
@@ -294,8 +287,13 @@
 
 
 
-    <!-- JAVASCRIPT & jQUERY-->
+    <!-- JAVASCRIPT -->
     <script src="assets/js/dist/sripts.min.js"></script>
+    <!-- jQUERY -->
     <script src="assets/lib/jquery/jquery.js"></script>
+    <!-- FONTAWESOME -->
+    <script src="assets/lib/fontawesome-free-5.15.1-web/js/all.js"></script>
+    <!-- SLICK -->
+    <script src="assets/lib/slick-1.8.1/slick/slick.js"></script>
 </body>
 </html>
