@@ -13,6 +13,9 @@
             border-radius: 5px;
             box-shadow: 0px 12px 12px 6px rgba(0, 0, 0, .5);
             border-left: rgb(100, 0, 100) 10px solid;
+
+            // ANIMATION
+            overflow: hidden;
         }
         & .desc {
             padding: 1rem;
@@ -21,6 +24,8 @@
             font-size: 1.2rem;
             line-height: 2rem;
             box-shadow: 12px 12px 12px 6px rgba(0, 0, 0, .5);
+            overflow: hidden;
+            position: relative;
         }
         & .picture:hover {
             background-image: url(../img/photomask.png);

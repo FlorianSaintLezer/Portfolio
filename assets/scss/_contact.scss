@@ -1,5 +1,7 @@
 #contact form {
-    margin: 0 auto;
+    position: relative;
+    left: calc(50% - 2rem);
+    transform: translate(-50%, 0);
     @include flex(row, space-between, center, wrap);
     max-width: 800px;
     & div:not(:last-child) {
@@ -28,4 +30,9 @@
         @extend %mainButton;
 
     }
+}
+#contact p {
+    text-transform: none;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
