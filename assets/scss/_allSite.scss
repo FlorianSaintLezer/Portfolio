@@ -78,3 +78,24 @@ h2 {
     .sectionHead h2 {
         margin-bottom: 2rem;
     }
+
+    #toTop {
+        font-family: "Roboto Black";
+        padding: 5px;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        border-radius: 5rem;
+        display: none;
+        cursor: pointer;
+        color: $cThemeLight;
+        background-color: $cLight;
+        text-align: center;
+        border: 1px solid transparent;
+
+       
+
+    }
+    #toTop:hover {
+        border: 1px solid $cThemeLight;
+    }

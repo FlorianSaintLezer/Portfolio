@@ -130,6 +130,52 @@ $(document).scroll(function(){
 $(".toggler").click(function() {
     $(this).next('ul').slideToggle();
 });
+
+
+
+// $(document).ready(function(){
+//     $('.gallery').slick({
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//       });
+//       $('.SkillList').slick();
+
+
+// });
+
+
+// $(document).ready(function(){
+//     $('.gallery').slick({
+//         arrow:false,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         dots:false,
+//         infinite:true
+//     });
+
+
+// });
+
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function () {
+   //1 second of animation time
+   //html works for FFX but not Chrome
+   //body works for Chrome but not FFX
+   //This strange selector seems to work universally
+   $("html, body").animate({scrollTop: 0}, 1000);
+});
+
   
 
     

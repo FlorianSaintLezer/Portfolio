@@ -68,6 +68,20 @@ header {
                 }
             }
         }
+        & .navResponsive { //RIGHT MENU
+            @include flex(row, flex-end, center, nowrap);
+            display: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            & .navItem {
+                padding: 0 10px;
+                & a {
+                    text-transform: uppercase;
+                    
+                }
+            }
+        }
         
     }
     & #homeTitle { // MAIN TITLE
