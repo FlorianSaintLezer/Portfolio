@@ -1,15 +1,18 @@
 // GLOBAL 
-    @media screen and (min-width:769px) and (max-width:817px) {
+    @media screen and (max-width:817px) {
         .content {
             width: 96%;
         }
         #about .card {
- 
             width: 100%;
             margin: 0 auto;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        .picture {
+            width: 90%!important;
+            min-width: 90%!important;
         }
 
     }
@@ -64,6 +67,7 @@
         .navItem a {
             color: #000 ;
             width: 90%;
+            height: 100%;
             line-height: 4rem;
         }
 
