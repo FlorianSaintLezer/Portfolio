@@ -5,7 +5,7 @@
     width: 100%;
     @include flex(row,space-between,center,nowrap);
     position: relative;
-    margin: 2rem auto 0;
+    margin: 2rem auto;
     & .circle {
         background-color: $cDark;
         color: $cLight;

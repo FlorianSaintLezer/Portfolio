@@ -1,20 +1,20 @@
 
-$(document).scroll(function(){
-    var card = $(".card");
-    var cardPic = $(".picture");
-    var cardDesc = $(".desc");
-    var skillList = $(".formationDesc");
-    var skill = $(".skill");
-    var y = $(document).scrollTop();
-    var navbar = document.getElementById("navbar");
+// $(document).scroll(function(){
+//     var card = $(".card");
+//     var cardPic = $(".picture");
+//     var cardDesc = $(".desc");
+//     var skillList = $(".formationDesc");
+//     var skill = $(".skill");
+//     var y = $(document).scrollTop();
+//     var navbar = document.getElementById("navbar");
    
 
-    if (y > 351) {
-        card.fadeIn(500);
-    }
-    if (y > 800) {
-        skillList.fadeIn(500);
-    }
+//     if (y > 351) {
+//         card.fadeIn(500);
+//     }
+//     if (y > 800) {
+//         skillList.fadeIn(500);
+//     }
 
 
         // if (y < 600) {
@@ -89,7 +89,7 @@ $(document).scroll(function(){
 
 
 
-});
+// });
 
 
 
@@ -125,6 +125,10 @@ $(document).scroll(function(){
 //     $(".navList").slideToggle(500);
 
 // });
+
+
+
+
 
 
 $(".toggler").click(function() {
@@ -168,20 +172,36 @@ $(window).scroll(function() {
     }
 });
 
-$("#toTop").click(function () {
-   //1 second of animation time
-   //html works for FFX but not Chrome
-   //body works for Chrome but not FFX
-   //This strange selector seems to work universally
-   $("html, body").animate({scrollTop: 0}, 1000);
+// $(function(){   
+//     $('.formationDesc h3').on('click', function() {	
+//         $(this).nextUntil('div').slideToggle(500);
+//         $(this).siblings('div').nextUntil('div').slideUp(500);
+//     });
+
+// });
+
+// $('h2>div').hide();
+// $('h2').on('click', function(){
+// 	$(this).next('div').slideDown();
+// 	$(this).siblings('h2').next().slideUp();
+// });
+
+
+
+$(function(){
+
+
 });
 
-  
-
-    
 
 
 
 
+
+$('#formations h3 ~ div').hide();
+$('#formations h3').on('click', function(){
+	$(this).next('div').slideToggle();
+	$(this).siblings('h3').next().slideUp();
+});
 
 
