@@ -25,6 +25,7 @@ h2 {
 /* // CLASS SPEC // */
 .content {
     @extend %container;
+    position: relative;
 }
 .bgImg {
     @extend %bgImage;
