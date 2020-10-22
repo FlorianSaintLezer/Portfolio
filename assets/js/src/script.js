@@ -9,6 +9,12 @@ $(document).scroll(function(){
     var navbar = document.getElementById("navbar");
    
 
+    if (y > 351) {
+        card.fadeIn(500);
+    }
+    if (y > 800) {
+        skillList.fadeIn(500);
+    }
 
 
         // if (y < 600) {
@@ -50,19 +56,44 @@ $(document).scroll(function(){
         
     // }
 
-        if(y > 350) {
-            card.animate({
-                width: "90%"
-            },1000);
-        };
-        if( y > 800) {
-            skillList.animate({
-                width:"100vw"
-            },500, function(){
-                skill.slideDown(500),function(){};
-            });   
-        }
+
+
+        // if(y > 350) {
+        //     card.animate({
+        //         width: "90%"
+        //     },1000);
+        // };
+        // if( y > 800) {
+        //     skillList.animate({
+        //         width:"100vw"
+        //     },500, function(){
+        //         skill.slideDown(500);
+        //     });   
+        // }
+
+
+
+
+
+//         if(y > 350) {
+//             card.animate({
+//                 width: "90%"
+//             },1000);
+//             skillList.animate({
+//                 width:"100vw"
+//             },500, function(){
+//                 skill.slideDown(500);
+//             });
+
+//         };
+
+
+
 });
+
+
+
+
 
 // $(window).onscroll = function() {myFunction()};
 
@@ -95,11 +126,13 @@ $(document).scroll(function(){
 
 // });
 
-    $('.toggler button').click(function(){
-        $(".navList").fadeIn(500);
 
+$(".toggler").click(function() {
+    $(this).next('ul').slideToggle();
+});
+  
 
-    })
+    
 
 
 

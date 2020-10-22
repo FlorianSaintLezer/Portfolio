@@ -3,6 +3,15 @@
         .content {
             width: 96%;
         }
+        #about .card {
+ 
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
     }
     @media screen and (max-width:768px) {
         .content {
@@ -18,61 +27,51 @@
         .logo {
             margin-left: 5%;
         }
-    }
-// NAVBAR
-    @media screen and (max-width:768px) {
+
+        // NAVBAR
+
         .toggler {
+            width: 110px;
             display: flex!important;
-            margin-right: 5%;
+            justify-content: space-between!important;
+            align-items: center;
+            color: $cLight;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            & button { //HAMBURGER
+                color: $cLight;
+                font-size: 2.2rem;
+                background-color: transparent;
+                border: none;
+            }  
         }
         .navList {
+            z-index: 3;
             display: none;
-            flex-direction: column;
+            flex-direction: column!important;
             width: 100%;
             position: absolute;
-            top: 10vh;
+            top: 70px;
             background-color: whitesmoke;
             text-align: center;
         }
         .navItem {
-            border: #333 1px solid;
+            border-top: #333 1px solid;
+            width: calc(100% - 2rem);
+
         }
+
         .navItem a {
             color: #000 ;
+            width: 90%;
+            line-height: 4rem;
         }
-    }
-
-     @media screen and (max-width: 646px) {
-        header #homeTitle {
-            & h1 {
-                font-size: 1.25;
-                margin-bottom: 1rem;
-            }
-            & h2 {
-                font-size: 2rem;
-                margin-bottom: 2.5rem;
-            }
-            & a {
-                padding: 1rem;
-            }
-        }
-    } 
 
 
-    @media screen and (max-width:768px) {
-        #about .card {
-            flex-wrap: wrap;
-            padding-left: 5px;
-        }
-    }
+        
 
+        // SKILLS
 
-    @media screen and (min-width:769px) and (max-width:1024px) {
-        .formation {
-            width: calc(100% - 4rem);
-        }
-    }
-    @media screen and (max-width:768px) {
         .decoFormInt {
             display: none;
         }
@@ -108,34 +107,41 @@
     }
 
 
+     @media screen and (max-width: 646px) {
+        header #homeTitle {
+            & h1 {
+                font-size: 1.25;
+                margin-bottom: 1rem;
+            }
+            & h2 {
+                font-size: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            & a {
+                padding: 1rem;
+            }
+        }
+    } 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        .formation {
+            width: calc(100% - 4rem);
+        }
+    }
 
 
     // CONTACT
 
 @media screen and (max-width:768px) {
     #contact form {
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
         & div:not(:last-child) {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             margin-bottom: 1rem;
         }
@@ -143,7 +149,7 @@
             min-width: 80%;
             & textarea {
                 display: block;
-                width: calc(100% + 2px);
+                width: calc(100% - 6px);
                 height: 140px;
                 resize: none;
             }

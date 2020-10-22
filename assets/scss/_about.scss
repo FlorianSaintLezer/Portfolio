@@ -1,7 +1,6 @@
 #about {
     & .card {
-        width: 0;
-        overflow: hidden;
+        width: 100%;
         @include flex(row,center,center,nowrap);
         & .picture {
             margin: 0 auto;

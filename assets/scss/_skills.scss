@@ -2,7 +2,6 @@
 /* // SECTION FORMATIONS // */
 /* //////////////////////// */
 .formation {
-    // width: 80%;
     width: 100%;
     @include flex(row,space-between,center,nowrap);
     position: relative;
@@ -28,7 +27,7 @@
         position: relative;
         // width: calc(90% - 110px);
         // width: 100%;
-        width: 0;
+        width: 100%;
         padding: 2rem 3rem;
         border-radius: 5px;
         text-align: center;
