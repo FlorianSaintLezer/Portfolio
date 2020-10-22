@@ -98,3 +98,16 @@ h2 {
     #toTop:hover {
         border: 1px solid $cThemeLight;
     }
+
+
+    #slide {
+        display: none;
+        border-radius: 10px;
+        @extend %mainButton;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 5rem;
+        font-size: 2rem;
+    }

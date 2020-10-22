@@ -205,3 +205,43 @@ $('#formations h3').on('click', function(){
 });
 
 
+var slide = $("#slide");
+//   Haut, haut, bas, bas, gauche, droite, gauche, droite, B, A
+  var k = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+  n = 0;
+  $(document).keydown(function (e) {
+      if (e.keyCode === k[n++]) {
+          if (n === k.length) {
+            
+            slide.fadeToggle(500);
+            //   alert('Konami !!!'); // à remplacer par votre code
+
+
+              n = 0;
+              return false;
+          }
+      }
+      else {
+          n = 0;
+      }
+  });
+
+
+  var s = [83, 76, 73, 68, 69],
+  m = 0;
+  $(document).keydown(function (e) {
+      if (e.keyCode === s[m++]) {
+          if (m === s.length) {
+
+            slide.fadeToggle(500);
+            //   alert('SLIDE !!!'); // à remplacer par votre code
+
+
+              m = 0;
+              return false;
+          }
+      }
+      else {
+          m = 0;
+      }
+  });
