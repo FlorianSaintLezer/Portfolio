@@ -1,7 +1,39 @@
 footer {
     background-color: $cDark;
     color: $cLight;
-    & p {
-        padding: 3rem 1rem;
+    padding: 1rem 1rem;
+
+    & .content {
+        padding: 2 rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        &>* {
+            padding: 1rem 0;
+        }
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style: none;
+            align-items: center;
+            & li {
+                & a {
+                    font-size: 2rem;
+                    color: $cLight;
+                }
+                & a:hover {
+                    color: $cThemeLight;
+                }
+            }
+            & li:not(:last-child) {
+                padding-right: 2rem;
+            }
+        }
+
     }
+    
 }

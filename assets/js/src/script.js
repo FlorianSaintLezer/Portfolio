@@ -72,9 +72,6 @@
         // }
 
 
-
-
-
 //         if(y > 350) {
 //             card.animate({
 //                 width: "90%"
@@ -90,9 +87,6 @@
 
 
 // });
-
-
-
 
 
 // $(window).onscroll = function() {myFunction()};
@@ -125,9 +119,6 @@
 //     $(".navList").slideToggle(500);
 
 // });
-
-
-
 
 
 
@@ -214,8 +205,7 @@ var slide = $("#slide");
           if (n === k.length) {
             
             slide.fadeToggle(500);
-            //   alert('Konami !!!'); // à remplacer par votre code
-
+            //   alert('Konami !!!');
 
               n = 0;
               return false;
@@ -234,7 +224,7 @@ var slide = $("#slide");
           if (m === s.length) {
 
             slide.fadeToggle(500);
-            //   alert('SLIDE !!!'); // à remplacer par votre code
+            //   alert('SLIDE !!!'); 
 
 
               m = 0;

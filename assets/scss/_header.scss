@@ -48,10 +48,14 @@ header {
             font-size: 1.2rem;
             text-transform: uppercase;
             & button { //HAMBURGER
-                color: $cLight;
+                color: $cThemeLight;
                 font-size: 2.2rem;
                 background-color: transparent;
                 border: none;
+                position: fixed;
+                left: calc(100% - 2.2rem);
+                transform: translate(-50%, 0);
+                z-index: 50;
             }  
         }
 
@@ -122,6 +126,25 @@ header {
             border-right: $cThemeLight 1px solid;
             border-bottom: $cThemeLight 1px solid;
             transition: linear border-left 500ms, border-top 1000ms, border-right 1500ms, border-bottom 2000ms ;
+        }
+    }
+    & .network {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 0;
+        list-style: none;
+        padding-bottom: 1rem;
+        & li {
+            padding: 0 1rem;
+            & a {
+                font-size: 2rem;
+                color: white;
+            }
+            & a:hover {
+                color: $cThemeLight;
+            }
         }
     }
 }
