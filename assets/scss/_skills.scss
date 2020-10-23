@@ -32,6 +32,21 @@
         border-radius: 5px;
         text-align: center;
         overflow: hidden;
+        & h3 {
+            line-height: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        & h3::after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f078";
+            display: inline-block;
+            padding-left: 3px;
+            vertical-align: middle;
+            font-weight: 900;
+            font-size: 1.2rem;
+
+        }
         & .skillList {
             @include flex (row, center, center, wrap) ;
             & .skill {
