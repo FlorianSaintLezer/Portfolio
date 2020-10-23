@@ -65,12 +65,14 @@
             display:none!important;
         }
         .navResponsive {
-            @include flex(column, flex-end, center, nowrap);
+            @include flex(column, center, center, nowrap);
             display: none;
             z-index: 3;
             width: 100%;
             position: absolute;
             top: 70px;
+            left: 50%;
+            transform: translate(-50%, 0);
             background-color: whitesmoke;
             text-align: center;
         }

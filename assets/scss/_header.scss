@@ -47,6 +47,7 @@ header {
             color: $cLight;
             font-size: 1.2rem;
             text-transform: uppercase;
+            padding-right: 2.2rem;
             & button { //HAMBURGER
                 color: $cThemeLight;
                 font-size: 2.2rem;
@@ -74,6 +75,7 @@ header {
         }
         & .navResponsive { //RIGHT MENU
             @include flex(row, flex-end, center, nowrap);
+            position: fixed;
             display: none;
             margin: 0;
             padding: 0;
