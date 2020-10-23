@@ -122,9 +122,13 @@
 
 
 
+
+
 $(".toggler").click(function() {
     $(this).next('ul').slideToggle();
 });
+
+
 
 
 
@@ -153,7 +157,8 @@ $(".toggler").click(function() {
 
 // });
 
-
+////////////////////////////////////////////////////
+// SCROLL TOP 
 
 $(window).scroll(function() {
     if ($(this).scrollTop()) {
@@ -162,6 +167,11 @@ $(window).scroll(function() {
         $('#toTop').fadeOut();
     }
 });
+$("#toTop").click(function () {
+    $("html, body").animate({scrollTop: 0}, 1000);
+ });
+///////////////////////////////////////////////////////
+
 
 // $(function(){   
 //     $('.formationDesc h3').on('click', function() {	
@@ -179,21 +189,15 @@ $(window).scroll(function() {
 
 
 
-$(function(){
-
-
-});
-
-
-
-
-
+////////////////////////////////////////////////////////
+// SKILL SLIDEDOWN
 
 $('#formations h3 ~ div').hide();
 $('#formations h3').on('click', function(){
 	$(this).next('div').slideToggle();
 	$(this).siblings('h3').next().slideUp();
 });
+//////////////////////////////////////////////////////
 
 
 var slide = $("#slide");
